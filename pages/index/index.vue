@@ -1,8 +1,9 @@
 <template>
 	<view class="index-wrap">
+		<v-headNav />
 		<v-banner />
 		<v-scrollNav />
-		<v-advertising :url="adUrl" />
+		<!-- <v-advertising :url="adUrl" /> -->
 		<scroll-view scroll-y="true" class="scroll-musicList" :scroll-into-view="scrollToView" :scroll-with-animation="true">
 			<view><v-musicList title="热歌榜" :songList="hotList" id="hotSong" /></view>
 			<view><v-musicList title="新歌榜" :songList="newList" id="newSong" /></view>
@@ -20,13 +21,15 @@ import musicList from '@/components/musicList';
 import loading from '@/components/loading';
 import advertising from '@/components/advertising';
 import { mapState } from 'vuex';
+import headNav from '@/components/headNav/headNav';
 export default {
 	components: {
 		'v-banner': banner,
 		'v-scrollNav': scrollNav,
 		'v-musicList': musicList,
 		'v-loading': loading,
-		'v-advertising': advertising
+		'v-advertising': advertising,
+		'v-headNav':headNav
 	},
 	data() {
 		return {
@@ -45,7 +48,8 @@ export default {
 		closeLoading() {
 			this.$store.commit('changeLoading', false);
 		},
-		getData(){
+		getData() {
+			this.openLoading();
 			const p1 = HomeModel.getListByType(2, 6, 0);
 			const p2 = HomeModel.getListByType(1, 6, 0);
 			const p3 = HomeModel.getListByType(11, 6, 0);
@@ -56,15 +60,14 @@ export default {
 				if (res[1].song_list) this.newList = res[1].song_list;
 				if (res[2].song_list) this.rockList = res[2].song_list;
 				if (res[3].song_list) this.usaList = res[3].song_list;
-			});
+			}).catch(()=>this.closeLoading());
 		}
 	},
 	computed: {
 		...mapState(['scrollToView', 'showLoading'])
 	},
 	onLoad() {
-		this.openLoading();
-		this.getData()
+		this.getData();
 	}
 };
 </script>
@@ -75,7 +78,7 @@ export default {
 	background: #f8f8f8;
 	.scroll-musicList {
 		position: absolute;
-		top: 590rpx;
+		top: 560rpx;
 		left: 0;
 		bottom: 0;
 		width: 100%;

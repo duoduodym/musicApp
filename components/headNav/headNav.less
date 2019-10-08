@@ -1,0 +1,50 @@
+@font-face {
+	font-family: 'iconfont';
+	src: url('https://at.alicdn.com/t/font_1446288_f9hajs99ii.ttf') format('truetype');
+}
+@keyframes playing {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+.head-nav {
+	display: flex;
+	height: 100rpx;
+	align-items: center;
+	padding: 0 20rpx 20rpx;
+	padding-top: var(--status-bar-height);
+	.search-box {
+		box-sizing: border-box;
+		flex: 1;
+		height: 60rpx;
+		border: 1px solid #e5e5e5;
+		border-radius: 4rpx;
+		display: flex;
+		align-items: center;
+		padding-left: 10rpx;
+		color: #999;
+		.text {
+			font-size: 32rpx;
+			padding-left: 10rpx;
+		}
+		.icon {
+			font-family: iconfont;
+			color: #999;
+		}
+	}
+	.musicIcon {
+		flex: 0 0 80rpx;
+		width: 80rpx;
+		font-family: iconfont;
+		color: #999;
+		font-size: 50rpx;
+		text-align: center;
+		&.active{
+			animation: playing 2s infinite linear;
+		}
+	}
+}

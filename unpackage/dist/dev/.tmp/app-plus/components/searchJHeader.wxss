@@ -1,0 +1,68 @@
+.search-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  height: 140rpx;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 60rpx 20rpx 0rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.search-header .search-box {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #e5e5e5;
+}
+.search-header .search-box .search-input {
+  color: #666;
+  padding-left: 10rpx;
+  line-height: 80rpx;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  font-size: 32rpx;
+}
+.search-header .search-box .clear-btn {
+  font-family: iconfont;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 80rpx;
+      -ms-flex: 0 0 80rpx;
+          flex: 0 0 80rpx;
+  width: 80rpx;
+  text-align: center;
+  color: #666;
+}
+.search-header .search-box .ph {
+  color: #666;
+  font-size: 32rpx;
+  line-height: 80rpx;
+}
+.search-header .cancel-btn {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 140rpx;
+      -ms-flex: 0 0 140rpx;
+          flex: 0 0 140rpx;
+  width: 140rpx;
+  text-align: center;
+  color: #666;
+}
+

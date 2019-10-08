@@ -5,7 +5,10 @@ const store = new Vuex.Store({
 	state: {
 		scrollToView: '',
 		showLoading: false,
-		playerStatus:false  
+		playerStatus:false,
+		lrcTop:0,
+		currentTime:-1,
+		currentId:''
 	},
 	mutations: {
 		changeScroll(state, type) {
@@ -16,6 +19,15 @@ const store = new Vuex.Store({
 		},
 		changePlayStatus(state, type){
 			state.playerStatus = type
+		},
+		changeLrcTop(state,top){
+			state.lrcTop = top
+		},
+		changeCurrentTime(state,time){
+			state.currentTime = time
+		},
+		changeCurrentId(state,id){
+			state.currentId = id
 		}
 	}
 })

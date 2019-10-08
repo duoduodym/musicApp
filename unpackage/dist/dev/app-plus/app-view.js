@@ -1087,17 +1087,45 @@ function gz$gwx_3(){
 if( __WXML_GLOBAL__.ops_cached.$gwx_3)return __WXML_GLOBAL__.ops_cached.$gwx_3
 __WXML_GLOBAL__.ops_cached.$gwx_3=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'detail-nav'])
+Z([3,'__e'])
+Z([3,'back-btn'])
+Z([[4],[[5],[[4],[[5],[[5],[1,'tap']],[[4],[[5],[[4],[[5],[[5],[1,'goBack']],[[4],[[5],[1,'$event']]]]]]]]]]])
+Z([3,''])
+})(__WXML_GLOBAL__.ops_cached.$gwx_3);return __WXML_GLOBAL__.ops_cached.$gwx_3
+}
+function gz$gwx_4(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_4)return __WXML_GLOBAL__.ops_cached.$gwx_4
+__WXML_GLOBAL__.ops_cached.$gwx_4=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'head-nav'])
+Z([3,'search-box'])
+Z([3,'icon'])
+Z([3,''])
+Z([3,'text'])
+Z([3,'搜索'])
+Z([[7],[3,'currentId']])
+Z([3,'__e'])
+Z([[4],[[5],[[5],[1,'musicIcon']],[[2,'?:'],[[7],[3,'playerStatus']],[1,'active'],[1,'']]]])
+Z([[4],[[5],[[4],[[5],[[5],[1,'tap']],[[4],[[5],[[4],[[5],[[5],[1,'goBack']],[[4],[[5],[1,'$event']]]]]]]]]]])
+Z([3,''])
+})(__WXML_GLOBAL__.ops_cached.$gwx_4);return __WXML_GLOBAL__.ops_cached.$gwx_4
+}
+function gz$gwx_5(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_5)return __WXML_GLOBAL__.ops_cached.$gwx_5
+__WXML_GLOBAL__.ops_cached.$gwx_5=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
 Z([[7],[3,'showLoading']])
 Z([3,'loading-wrap'])
 Z([3,'round round1'])
 Z([3,'round round2'])
 Z([3,'round round3'])
 Z([3,'round round4'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_3);return __WXML_GLOBAL__.ops_cached.$gwx_3
+})(__WXML_GLOBAL__.ops_cached.$gwx_5);return __WXML_GLOBAL__.ops_cached.$gwx_5
 }
-function gz$gwx_4(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_4)return __WXML_GLOBAL__.ops_cached.$gwx_4
-__WXML_GLOBAL__.ops_cached.$gwx_4=[];
+function gz$gwx_6(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_6)return __WXML_GLOBAL__.ops_cached.$gwx_6
+__WXML_GLOBAL__.ops_cached.$gwx_6=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'music-list'])
 Z([3,'title-warp'])
@@ -1121,16 +1149,16 @@ Z([3,'img-wrap'])
 Z([[6],[[7],[3,'item']],[3,'pic_radio']])
 Z([3,'item-title'])
 Z([a,[[6],[[7],[3,'item']],[3,'title']]])
-Z([3,'item-empty _div'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_4);return __WXML_GLOBAL__.ops_cached.$gwx_4
+Z([3,'item-empty'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_6);return __WXML_GLOBAL__.ops_cached.$gwx_6
 }
-function gz$gwx_5(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_5)return __WXML_GLOBAL__.ops_cached.$gwx_5
-__WXML_GLOBAL__.ops_cached.$gwx_5=[];
+function gz$gwx_7(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_7)return __WXML_GLOBAL__.ops_cached.$gwx_7
+__WXML_GLOBAL__.ops_cached.$gwx_7=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'__e'])
 Z([3,'music-player'])
-Z([[4],[[5],[[4],[[5],[[5],[1,'tap']],[[4],[[5],[[4],[[5],[[5],[1,'onStop']],[[4],[[5],[1,'$event']]]]]]]]]]])
+Z([[4],[[5],[[4],[[5],[[5],[1,'tap']],[[4],[[5],[[4],[[5],[[5],[1,'onPause']],[[4],[[5],[1,'$event']]]]]]]]]]])
 Z([3,'bgImg'])
 Z([[6],[[6],[[7],[3,'songDetal']],[3,'songinfo']],[3,'pic_huge']])
 Z([3,'mask'])
@@ -1152,18 +1180,18 @@ Z([3,'lrcWrap'])
 Z([[7],[3,'animationData']])
 Z([3,'lrc-List'])
 Z([3,'lrcList'])
-Z([[2,'+'],[[2,'+'],[1,'top:'],[[7],[3,'lTop']]],[1,';']])
+Z([[2,'+'],[[2,'+'],[1,'top:'],[[7],[3,'lrcTop']]],[1,';']])
 Z([3,'key'])
 Z([3,'val'])
 Z([[7],[3,'lrc']])
 Z([[4],[[5],[[5],[1,'lrc-item']],[[2,'?:'],[[2,'=='],[[7],[3,'currentTime']],[[7],[3,'key']]],[1,'active'],[1,'']]]])
 Z([a,[[7],[3,'val']]])
 Z([3,'hide-item'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_5);return __WXML_GLOBAL__.ops_cached.$gwx_5
+})(__WXML_GLOBAL__.ops_cached.$gwx_7);return __WXML_GLOBAL__.ops_cached.$gwx_7
 }
-function gz$gwx_6(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_6)return __WXML_GLOBAL__.ops_cached.$gwx_6
-__WXML_GLOBAL__.ops_cached.$gwx_6=[];
+function gz$gwx_8(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_8)return __WXML_GLOBAL__.ops_cached.$gwx_8
+__WXML_GLOBAL__.ops_cached.$gwx_8=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'scroll-nav'])
 Z([3,'__i0__'])
@@ -1176,22 +1204,53 @@ Z([[4],[[5],[[4],[[5],[[5],[1,'tap']],[[4],[[5],[[4],[[5],[[5],[[5],[1,'onSelect
 Z([3,'text-wrap'])
 Z([3,'text'])
 Z([a,[[6],[[7],[3,'item']],[3,'name']]])
-})(__WXML_GLOBAL__.ops_cached.$gwx_6);return __WXML_GLOBAL__.ops_cached.$gwx_6
+})(__WXML_GLOBAL__.ops_cached.$gwx_8);return __WXML_GLOBAL__.ops_cached.$gwx_8
 }
-function gz$gwx_7(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_7)return __WXML_GLOBAL__.ops_cached.$gwx_7
-__WXML_GLOBAL__.ops_cached.$gwx_7=[];
+function gz$gwx_9(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_9)return __WXML_GLOBAL__.ops_cached.$gwx_9
+__WXML_GLOBAL__.ops_cached.$gwx_9=[];
+(function(z){var a=11;function Z(ops){z.push(ops)}
+Z([3,'search-header'])
+Z([3,'search-box'])
+Z([3,'__e'])
+Z(z[2])
+Z(z[2])
+Z([3,'search-input'])
+Z([3,'search'])
+Z([[4],[[5],[[5],[[5],[[4],[[5],[[5],[1,'confirm']],[[4],[[5],[[4],[[5],[[5],[1,'onConfirm']],[[4],[[5],[1,'$event']]]]]]]]]],[[4],[[5],[[5],[1,'input']],[[4],[[5],[[4],[[5],[[5],[1,'__set_model']],[[4],[[5],[[5],[[5],[[5],[1,'']],[1,'searchKey']],[1,'$event']],[[4],[[5],[1,'trim']]]]]]]]]]]],[[4],[[5],[[5],[1,'blur']],[[4],[[5],[[4],[[5],[1,'$forceUpdate']]]]]]]]])
+Z([3,'搜索歌名/专辑/歌手'])
+Z([3,'ph'])
+Z([3,'text'])
+Z([[7],[3,'searchKey']])
+Z(z[11])
+Z(z[2])
+Z([3,'clear-btn'])
+Z([[4],[[5],[[4],[[5],[[5],[1,'tap']],[[4],[[5],[[4],[[5],[[5],[1,'onClear']],[[4],[[5],[1,'$event']]]]]]]]]]])
+Z([3,''])
+Z([3,'cancel-btn'])
+Z([3,'取消'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_9);return __WXML_GLOBAL__.ops_cached.$gwx_9
+}
+function gz$gwx_10(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_10)return __WXML_GLOBAL__.ops_cached.$gwx_10
+__WXML_GLOBAL__.ops_cached.$gwx_10=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'detail-wrap'])
 Z([3,'__l'])
+Z([3,'1'])
+Z(z[1])
 Z([[7],[3,'lrc']])
 Z([[7],[3,'songInfo']])
-Z([3,'1'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_7);return __WXML_GLOBAL__.ops_cached.$gwx_7
+Z([3,'2'])
+Z(z[1])
+Z([3,'loading'])
+Z([[7],[3,'showLoading']])
+Z([3,'3'])
+})(__WXML_GLOBAL__.ops_cached.$gwx_10);return __WXML_GLOBAL__.ops_cached.$gwx_10
 }
-function gz$gwx_8(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_8)return __WXML_GLOBAL__.ops_cached.$gwx_8
-__WXML_GLOBAL__.ops_cached.$gwx_8=[];
+function gz$gwx_11(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_11)return __WXML_GLOBAL__.ops_cached.$gwx_11
+__WXML_GLOBAL__.ops_cached.$gwx_11=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'index-wrap'])
 Z([3,'__l'])
@@ -1199,7 +1258,6 @@ Z([3,'1'])
 Z(z[1])
 Z([3,'2'])
 Z(z[1])
-Z([[7],[3,'adUrl']])
 Z([3,'3'])
 Z([3,'scroll-musicList'])
 Z([[7],[3,'scrollToView']])
@@ -1229,27 +1287,58 @@ Z(z[1])
 Z([3,'loading'])
 Z([[7],[3,'showLoading']])
 Z([3,'8'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_8);return __WXML_GLOBAL__.ops_cached.$gwx_8
+})(__WXML_GLOBAL__.ops_cached.$gwx_11);return __WXML_GLOBAL__.ops_cached.$gwx_11
 }
-function gz$gwx_9(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_9)return __WXML_GLOBAL__.ops_cached.$gwx_9
-__WXML_GLOBAL__.ops_cached.$gwx_9=[];
+function gz$gwx_12(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_12)return __WXML_GLOBAL__.ops_cached.$gwx_12
+__WXML_GLOBAL__.ops_cached.$gwx_12=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
-})(__WXML_GLOBAL__.ops_cached.$gwx_9);return __WXML_GLOBAL__.ops_cached.$gwx_9
+})(__WXML_GLOBAL__.ops_cached.$gwx_12);return __WXML_GLOBAL__.ops_cached.$gwx_12
 }
-function gz$gwx_10(){
-if( __WXML_GLOBAL__.ops_cached.$gwx_10)return __WXML_GLOBAL__.ops_cached.$gwx_10
-__WXML_GLOBAL__.ops_cached.$gwx_10=[];
+function gz$gwx_13(){
+if( __WXML_GLOBAL__.ops_cached.$gwx_13)return __WXML_GLOBAL__.ops_cached.$gwx_13
+__WXML_GLOBAL__.ops_cached.$gwx_13=[];
 (function(z){var a=11;function Z(ops){z.push(ops)}
 Z([3,'search-wrap'])
-Z([3,'我是搜索'])
-})(__WXML_GLOBAL__.ops_cached.$gwx_10);return __WXML_GLOBAL__.ops_cached.$gwx_10
+Z([3,'__l'])
+Z([3,'1'])
+Z(z[1])
+Z([3,'ad'])
+Z([[7],[3,'adUrl']])
+Z([3,'2'])
+Z([3,'search-scroll'])
+Z([3,'true'])
+Z([3,'search-item-wrap'])
+Z([3,'title'])
+Z([3,'icon'])
+Z([3,'text'])
+Z([3,'热门搜索'])
+Z([3,'tag-list'])
+Z([3,'__i0__'])
+Z([3,'item'])
+Z([[7],[3,'hotList']])
+Z([3,'song_id'])
+Z([3,'tag'])
+Z([a,[[6],[[7],[3,'item']],[3,'album_title']]])
+Z(z[9])
+Z(z[10])
+Z(z[11])
+Z(z[12])
+Z([3,'历史搜索'])
+Z(z[14])
+Z([3,'__i1__'])
+Z(z[16])
+Z([[7],[3,'historyList']])
+Z([3,'*this'])
+Z(z[19])
+Z([a,[[7],[3,'item']]])
+})(__WXML_GLOBAL__.ops_cached.$gwx_13);return __WXML_GLOBAL__.ops_cached.$gwx_13
 }
 __WXML_GLOBAL__.ops_set.$gwx=z;
 __WXML_GLOBAL__.ops_init.$gwx=true;
 var nv_require=function(){var nnm={};var nom={};return function(n){return function(){if(!nnm[n]) return undefined;try{if(!nom[n])nom[n]=nnm[n]();return nom[n];}catch(e){e.message=e.message.replace(/nv_/g,'');var tmp = e.stack.substring(0,e.stack.lastIndexOf(n));e.stack = tmp.substring(0,tmp.lastIndexOf('\n'));e.stack = e.stack.replace(/\snv_/g,' ');e.stack = $gstack(e.stack);e.stack += '\n    at ' + n.substring(2);console.error(e);}
 }}}()
-var x=['./components/advertising.wxml','./components/banner.wxml','./components/loading.wxml','./components/musicList.wxml','./components/musicPlayer/musicPlayer.wxml','./components/scrollNav.wxml','./pages/detail/detail.wxml','./pages/index/index.wxml','./pages/me/me.wxml','./pages/search/search.wxml'];d_[x[0]]={}
+var x=['./components/advertising.wxml','./components/banner.wxml','./components/detailNav.wxml','./components/headNav/headNav.wxml','./components/loading.wxml','./components/musicList.wxml','./components/musicPlayer/musicPlayer.wxml','./components/scrollNav.wxml','./components/searchJHeader.wxml','./pages/detail/detail.wxml','./pages/index/index.wxml','./pages/me/me.wxml','./pages/search/search.wxml'];d_[x[0]]={}
 var m0=function(e,s,r,gg){
 var z=gz$gwx_1()
 var oB=_n('view')
@@ -1286,231 +1375,369 @@ e_[x[1]]={f:m1,j:[],i:[],ti:[],ic:[]}
 d_[x[2]]={}
 var m2=function(e,s,r,gg){
 var z=gz$gwx_3()
-var oP=_v()
-_(r,oP)
-if(_oz(z,0,e,s,gg)){oP.wxVkey=1
-var xQ=_n('view')
-_rz(z,xQ,'class',1,e,s,gg)
-var oR=_n('view')
-_rz(z,oR,'class',2,e,s,gg)
+var oP=_n('view')
+_rz(z,oP,'class',0,e,s,gg)
+var xQ=_mz(z,'view',['bindtap',1,'class',1,'data-event-opts',2],[],e,s,gg)
+var oR=_oz(z,4,e,s,gg)
 _(xQ,oR)
-var fS=_n('view')
-_rz(z,fS,'class',3,e,s,gg)
-_(xQ,fS)
-var cT=_n('view')
-_rz(z,cT,'class',4,e,s,gg)
-_(xQ,cT)
-var hU=_n('view')
-_rz(z,hU,'class',5,e,s,gg)
-_(xQ,hU)
 _(oP,xQ)
-}
-oP.wxXCkey=1
+_(r,oP)
 return r
 }
 e_[x[2]]={f:m2,j:[],i:[],ti:[],ic:[]}
 d_[x[3]]={}
 var m3=function(e,s,r,gg){
 var z=gz$gwx_4()
+var cT=_n('view')
+_rz(z,cT,'class',0,e,s,gg)
+var oV=_n('view')
+_rz(z,oV,'class',1,e,s,gg)
 var cW=_n('view')
-_rz(z,cW,'class',0,e,s,gg)
-var oX=_n('view')
-_rz(z,oX,'class',1,e,s,gg)
-var lY=_n('view')
-_rz(z,lY,'class',2,e,s,gg)
-var t1=_n('view')
-_rz(z,t1,'class',3,e,s,gg)
-_(lY,t1)
-var e2=_n('text')
-_rz(z,e2,'class',4,e,s,gg)
-var b3=_oz(z,5,e,s,gg)
-_(e2,b3)
-_(lY,e2)
-var aZ=_v()
-_(lY,aZ)
-if(_oz(z,6,e,s,gg)){aZ.wxVkey=1
-var o4=_mz(z,'image',['class',7,'src',1],[],e,s,gg)
-_(aZ,o4)
-}
-aZ.wxXCkey=1
-_(oX,lY)
-var x5=_n('text')
-_rz(z,x5,'class',9,e,s,gg)
-var o6=_oz(z,10,e,s,gg)
-_(x5,o6)
-_(oX,x5)
+_rz(z,cW,'class',2,e,s,gg)
+var oX=_oz(z,3,e,s,gg)
 _(cW,oX)
-var f7=_n('view')
-_rz(z,f7,'class',11,e,s,gg)
-var c8=_v()
-_(f7,c8)
-var h9=function(cAB,o0,oBB,gg){
-var aDB=_mz(z,'view',['bindtap',15,'class',1,'data-event-opts',2],[],cAB,o0,gg)
-var tEB=_n('view')
-_rz(z,tEB,'class',18,cAB,o0,gg)
-var eFB=_n('image')
-_rz(z,eFB,'src',19,cAB,o0,gg)
-_(tEB,eFB)
-_(aDB,tEB)
-var bGB=_n('text')
-_rz(z,bGB,'class',20,cAB,o0,gg)
-var oHB=_oz(z,21,cAB,o0,gg)
-_(bGB,oHB)
-_(aDB,bGB)
-_(oBB,aDB)
-return oBB
+_(oV,cW)
+var lY=_n('text')
+_rz(z,lY,'class',4,e,s,gg)
+var aZ=_oz(z,5,e,s,gg)
+_(lY,aZ)
+_(oV,lY)
+_(cT,oV)
+var hU=_v()
+_(cT,hU)
+if(_oz(z,6,e,s,gg)){hU.wxVkey=1
+var t1=_mz(z,'view',['bindtap',7,'class',1,'data-event-opts',2],[],e,s,gg)
+var e2=_oz(z,10,e,s,gg)
+_(t1,e2)
+_(hU,t1)
 }
-c8.wxXCkey=2
-_2z(z,14,h9,e,s,gg,c8,'item','__i0__','')
-var xIB=_n('view')
-_rz(z,xIB,'class',22,e,s,gg)
-_(f7,xIB)
-_(cW,f7)
-_(r,cW)
+hU.wxXCkey=1
+_(r,cT)
 return r
 }
 e_[x[3]]={f:m3,j:[],i:[],ti:[],ic:[]}
 d_[x[4]]={}
 var m4=function(e,s,r,gg){
 var z=gz$gwx_5()
-var fKB=_mz(z,'view',['bindtap',0,'class',1,'data-event-opts',1],[],e,s,gg)
-var cLB=_mz(z,'image',['class',3,'src',1],[],e,s,gg)
-_(fKB,cLB)
-var hMB=_n('view')
-_rz(z,hMB,'class',5,e,s,gg)
-_(fKB,hMB)
-var oNB=_mz(z,'image',['class',6,'src',1],[],e,s,gg)
-_(fKB,oNB)
-var cOB=_n('view')
-_rz(z,cOB,'class',8,e,s,gg)
-var lQB=_mz(z,'image',['class',9,'src',1],[],e,s,gg)
-_(cOB,lQB)
-var aRB=_mz(z,'image',['class',11,'src',1],[],e,s,gg)
-_(cOB,aRB)
-var oPB=_v()
-_(cOB,oPB)
-if(_oz(z,13,e,s,gg)){oPB.wxVkey=1
-var tSB=_mz(z,'view',['catchtap',14,'class',1,'data-event-opts',2],[],e,s,gg)
-var eTB=_mz(z,'image',['class',17,'src',1],[],e,s,gg)
-_(tSB,eTB)
-_(oPB,tSB)
+var o4=_v()
+_(r,o4)
+if(_oz(z,0,e,s,gg)){o4.wxVkey=1
+var x5=_n('view')
+_rz(z,x5,'class',1,e,s,gg)
+var o6=_n('view')
+_rz(z,o6,'class',2,e,s,gg)
+_(x5,o6)
+var f7=_n('view')
+_rz(z,f7,'class',3,e,s,gg)
+_(x5,f7)
+var c8=_n('view')
+_rz(z,c8,'class',4,e,s,gg)
+_(x5,c8)
+var h9=_n('view')
+_rz(z,h9,'class',5,e,s,gg)
+_(x5,h9)
+_(o4,x5)
 }
-oPB.wxXCkey=1
-_(fKB,cOB)
-var bUB=_mz(z,'view',['class',19,'id',1],[],e,s,gg)
-var oVB=_mz(z,'view',['animation',21,'class',1,'id',2,'style',3],[],e,s,gg)
-var xWB=_v()
-_(oVB,xWB)
-var oXB=function(cZB,fYB,h1B,gg){
-var c3B=_n('view')
-_rz(z,c3B,'class',28,cZB,fYB,gg)
-var o4B=_oz(z,29,cZB,fYB,gg)
-_(c3B,o4B)
-_(h1B,c3B)
-return h1B
-}
-xWB.wxXCkey=2
-_2z(z,27,oXB,e,s,gg,xWB,'val','key','')
-_(bUB,oVB)
-var l5B=_n('view')
-_rz(z,l5B,'class',30,e,s,gg)
-_(bUB,l5B)
-_(fKB,bUB)
-_(r,fKB)
+o4.wxXCkey=1
 return r
 }
 e_[x[4]]={f:m4,j:[],i:[],ti:[],ic:[]}
 d_[x[5]]={}
 var m5=function(e,s,r,gg){
 var z=gz$gwx_6()
-var t7B=_n('view')
-_rz(z,t7B,'class',0,e,s,gg)
-var e8B=_v()
-_(t7B,e8B)
-var b9B=function(xAC,o0B,oBC,gg){
-var cDC=_mz(z,'view',['bindtap',5,'class',1,'data-event-opts',2],[],xAC,o0B,gg)
-var hEC=_n('view')
-_rz(z,hEC,'class',8,xAC,o0B,gg)
-var oFC=_n('text')
-_rz(z,oFC,'class',9,xAC,o0B,gg)
-var cGC=_oz(z,10,xAC,o0B,gg)
-_(oFC,cGC)
-_(hEC,oFC)
-_(cDC,hEC)
-_(oBC,cDC)
-return oBC
+var cAB=_n('view')
+_rz(z,cAB,'class',0,e,s,gg)
+var oBB=_n('view')
+_rz(z,oBB,'class',1,e,s,gg)
+var lCB=_n('view')
+_rz(z,lCB,'class',2,e,s,gg)
+var tEB=_n('view')
+_rz(z,tEB,'class',3,e,s,gg)
+_(lCB,tEB)
+var eFB=_n('text')
+_rz(z,eFB,'class',4,e,s,gg)
+var bGB=_oz(z,5,e,s,gg)
+_(eFB,bGB)
+_(lCB,eFB)
+var aDB=_v()
+_(lCB,aDB)
+if(_oz(z,6,e,s,gg)){aDB.wxVkey=1
+var oHB=_mz(z,'image',['class',7,'src',1],[],e,s,gg)
+_(aDB,oHB)
 }
-e8B.wxXCkey=2
-_2z(z,3,b9B,e,s,gg,e8B,'item','__i0__','type')
-_(r,t7B)
+aDB.wxXCkey=1
+_(oBB,lCB)
+var xIB=_n('text')
+_rz(z,xIB,'class',9,e,s,gg)
+var oJB=_oz(z,10,e,s,gg)
+_(xIB,oJB)
+_(oBB,xIB)
+_(cAB,oBB)
+var fKB=_n('view')
+_rz(z,fKB,'class',11,e,s,gg)
+var cLB=_v()
+_(fKB,cLB)
+var hMB=function(cOB,oNB,oPB,gg){
+var aRB=_mz(z,'view',['bindtap',15,'class',1,'data-event-opts',2],[],cOB,oNB,gg)
+var tSB=_n('view')
+_rz(z,tSB,'class',18,cOB,oNB,gg)
+var eTB=_n('image')
+_rz(z,eTB,'src',19,cOB,oNB,gg)
+_(tSB,eTB)
+_(aRB,tSB)
+var bUB=_n('text')
+_rz(z,bUB,'class',20,cOB,oNB,gg)
+var oVB=_oz(z,21,cOB,oNB,gg)
+_(bUB,oVB)
+_(aRB,bUB)
+_(oPB,aRB)
+return oPB
+}
+cLB.wxXCkey=2
+_2z(z,14,hMB,e,s,gg,cLB,'item','__i0__','')
+var xWB=_n('view')
+_rz(z,xWB,'class',22,e,s,gg)
+_(fKB,xWB)
+_(cAB,fKB)
+_(r,cAB)
 return r
 }
 e_[x[5]]={f:m5,j:[],i:[],ti:[],ic:[]}
 d_[x[6]]={}
 var m6=function(e,s,r,gg){
 var z=gz$gwx_7()
+var fYB=_mz(z,'view',['bindtap',0,'class',1,'data-event-opts',1],[],e,s,gg)
+var cZB=_mz(z,'image',['class',3,'src',1],[],e,s,gg)
+_(fYB,cZB)
+var h1B=_n('view')
+_rz(z,h1B,'class',5,e,s,gg)
+_(fYB,h1B)
+var o2B=_mz(z,'image',['class',6,'src',1],[],e,s,gg)
+_(fYB,o2B)
+var c3B=_n('view')
+_rz(z,c3B,'class',8,e,s,gg)
+var l5B=_mz(z,'image',['class',9,'src',1],[],e,s,gg)
+_(c3B,l5B)
+var a6B=_mz(z,'image',['class',11,'src',1],[],e,s,gg)
+_(c3B,a6B)
+var o4B=_v()
+_(c3B,o4B)
+if(_oz(z,13,e,s,gg)){o4B.wxVkey=1
+var t7B=_mz(z,'view',['catchtap',14,'class',1,'data-event-opts',2],[],e,s,gg)
+var e8B=_mz(z,'image',['class',17,'src',1],[],e,s,gg)
+_(t7B,e8B)
+_(o4B,t7B)
+}
+o4B.wxXCkey=1
+_(fYB,c3B)
+var b9B=_mz(z,'view',['class',19,'id',1],[],e,s,gg)
+var o0B=_mz(z,'view',['animation',21,'class',1,'id',2,'style',3],[],e,s,gg)
+var xAC=_v()
+_(o0B,xAC)
+var oBC=function(cDC,fCC,hEC,gg){
+var cGC=_n('view')
+_rz(z,cGC,'class',28,cDC,fCC,gg)
+var oHC=_oz(z,29,cDC,fCC,gg)
+_(cGC,oHC)
+_(hEC,cGC)
+return hEC
+}
+xAC.wxXCkey=2
+_2z(z,27,oBC,e,s,gg,xAC,'val','key','')
+_(b9B,o0B)
 var lIC=_n('view')
-_rz(z,lIC,'class',0,e,s,gg)
-var aJC=_mz(z,'v-player',['bind:__l',1,'lrc',1,'songDetal',2,'vueId',3],[],e,s,gg)
-_(lIC,aJC)
-_(r,lIC)
+_rz(z,lIC,'class',30,e,s,gg)
+_(b9B,lIC)
+_(fYB,b9B)
+_(r,fYB)
 return r
 }
 e_[x[6]]={f:m6,j:[],i:[],ti:[],ic:[]}
 d_[x[7]]={}
 var m7=function(e,s,r,gg){
 var z=gz$gwx_8()
-var eLC=_n('view')
-_rz(z,eLC,'class',0,e,s,gg)
-var bMC=_mz(z,'v-banner',['bind:__l',1,'vueId',1],[],e,s,gg)
-_(eLC,bMC)
-var oNC=_mz(z,'v-scroll-nav',['bind:__l',3,'vueId',1],[],e,s,gg)
-_(eLC,oNC)
-var xOC=_mz(z,'v-advertising',['bind:__l',5,'url',1,'vueId',2],[],e,s,gg)
-_(eLC,xOC)
-var oPC=_mz(z,'scroll-view',['class',8,'scrollIntoView',1,'scrollWithAnimation',2,'scrollY',3],[],e,s,gg)
-var fQC=_n('view')
-var cRC=_mz(z,'v-music-list',['bind:__l',12,'id',1,'songList',2,'title',3,'vueId',4],[],e,s,gg)
-_(fQC,cRC)
-_(oPC,fQC)
+var tKC=_n('view')
+_rz(z,tKC,'class',0,e,s,gg)
+var eLC=_v()
+_(tKC,eLC)
+var bMC=function(xOC,oNC,oPC,gg){
+var cRC=_mz(z,'view',['bindtap',5,'class',1,'data-event-opts',2],[],xOC,oNC,gg)
 var hSC=_n('view')
-var oTC=_mz(z,'v-music-list',['bind:__l',17,'id',1,'songList',2,'title',3,'vueId',4],[],e,s,gg)
+_rz(z,hSC,'class',8,xOC,oNC,gg)
+var oTC=_n('text')
+_rz(z,oTC,'class',9,xOC,oNC,gg)
+var cUC=_oz(z,10,xOC,oNC,gg)
+_(oTC,cUC)
 _(hSC,oTC)
-_(oPC,hSC)
-var cUC=_n('view')
-var oVC=_mz(z,'v-music-list',['bind:__l',22,'id',1,'songList',2,'title',3,'vueId',4],[],e,s,gg)
-_(cUC,oVC)
-_(oPC,cUC)
-var lWC=_n('view')
-var aXC=_mz(z,'v-music-list',['bind:__l',27,'id',1,'songList',2,'title',3,'vueId',4],[],e,s,gg)
-_(lWC,aXC)
-_(oPC,lWC)
-_(eLC,oPC)
-var tYC=_mz(z,'v-loading',['bind:__l',32,'class',1,'showLoading',2,'vueId',3],[],e,s,gg)
-_(eLC,tYC)
-_(r,eLC)
+_(cRC,hSC)
+_(oPC,cRC)
+return oPC
+}
+eLC.wxXCkey=2
+_2z(z,3,bMC,e,s,gg,eLC,'item','__i0__','type')
+_(r,tKC)
 return r
 }
 e_[x[7]]={f:m7,j:[],i:[],ti:[],ic:[]}
 d_[x[8]]={}
 var m8=function(e,s,r,gg){
 var z=gz$gwx_9()
-var b1C=_n('view')
-_(r,b1C)
+var lWC=_n('view')
+_rz(z,lWC,'class',0,e,s,gg)
+var aXC=_n('view')
+_rz(z,aXC,'class',1,e,s,gg)
+var eZC=_mz(z,'input',['bindblur',2,'bindconfirm',1,'bindinput',2,'class',3,'confirmType',4,'data-event-opts',5,'placeholder',6,'placeholderClass',7,'type',8,'value',9],[],e,s,gg)
+_(aXC,eZC)
+var tYC=_v()
+_(aXC,tYC)
+if(_oz(z,12,e,s,gg)){tYC.wxVkey=1
+var b1C=_mz(z,'view',['bindtap',13,'class',1,'data-event-opts',2],[],e,s,gg)
+var o2C=_oz(z,16,e,s,gg)
+_(b1C,o2C)
+_(tYC,b1C)
+}
+tYC.wxXCkey=1
+_(lWC,aXC)
+var x3C=_n('view')
+_rz(z,x3C,'class',17,e,s,gg)
+var o4C=_oz(z,18,e,s,gg)
+_(x3C,o4C)
+_(lWC,x3C)
+_(r,lWC)
 return r
 }
 e_[x[8]]={f:m8,j:[],i:[],ti:[],ic:[]}
 d_[x[9]]={}
 var m9=function(e,s,r,gg){
 var z=gz$gwx_10()
-var x3C=_n('view')
-_rz(z,x3C,'class',0,e,s,gg)
-var o4C=_oz(z,1,e,s,gg)
-_(x3C,o4C)
-_(r,x3C)
+var c6C=_n('view')
+_rz(z,c6C,'class',0,e,s,gg)
+var h7C=_mz(z,'v-detail-nav',['bind:__l',1,'vueId',1],[],e,s,gg)
+_(c6C,h7C)
+var o8C=_mz(z,'v-player',['bind:__l',3,'lrc',1,'songDetal',2,'vueId',3],[],e,s,gg)
+_(c6C,o8C)
+var c9C=_mz(z,'v-loading',['bind:__l',7,'class',1,'showLoading',2,'vueId',3],[],e,s,gg)
+_(c6C,c9C)
+_(r,c6C)
 return r
 }
 e_[x[9]]={f:m9,j:[],i:[],ti:[],ic:[]}
+d_[x[10]]={}
+var m10=function(e,s,r,gg){
+var z=gz$gwx_11()
+var lAD=_n('view')
+_rz(z,lAD,'class',0,e,s,gg)
+var aBD=_mz(z,'v-head-nav',['bind:__l',1,'vueId',1],[],e,s,gg)
+_(lAD,aBD)
+var tCD=_mz(z,'v-banner',['bind:__l',3,'vueId',1],[],e,s,gg)
+_(lAD,tCD)
+var eDD=_mz(z,'v-scroll-nav',['bind:__l',5,'vueId',1],[],e,s,gg)
+_(lAD,eDD)
+var bED=_mz(z,'scroll-view',['class',7,'scrollIntoView',1,'scrollWithAnimation',2,'scrollY',3],[],e,s,gg)
+var oFD=_n('view')
+var xGD=_mz(z,'v-music-list',['bind:__l',11,'id',1,'songList',2,'title',3,'vueId',4],[],e,s,gg)
+_(oFD,xGD)
+_(bED,oFD)
+var oHD=_n('view')
+var fID=_mz(z,'v-music-list',['bind:__l',16,'id',1,'songList',2,'title',3,'vueId',4],[],e,s,gg)
+_(oHD,fID)
+_(bED,oHD)
+var cJD=_n('view')
+var hKD=_mz(z,'v-music-list',['bind:__l',21,'id',1,'songList',2,'title',3,'vueId',4],[],e,s,gg)
+_(cJD,hKD)
+_(bED,cJD)
+var oLD=_n('view')
+var cMD=_mz(z,'v-music-list',['bind:__l',26,'id',1,'songList',2,'title',3,'vueId',4],[],e,s,gg)
+_(oLD,cMD)
+_(bED,oLD)
+_(lAD,bED)
+var oND=_mz(z,'v-loading',['bind:__l',31,'class',1,'showLoading',2,'vueId',3],[],e,s,gg)
+_(lAD,oND)
+_(r,lAD)
+return r
+}
+e_[x[10]]={f:m10,j:[],i:[],ti:[],ic:[]}
+d_[x[11]]={}
+var m11=function(e,s,r,gg){
+var z=gz$gwx_12()
+var aPD=_n('view')
+_(r,aPD)
+return r
+}
+e_[x[11]]={f:m11,j:[],i:[],ti:[],ic:[]}
+d_[x[12]]={}
+var m12=function(e,s,r,gg){
+var z=gz$gwx_13()
+var eRD=_n('view')
+_rz(z,eRD,'class',0,e,s,gg)
+var bSD=_mz(z,'v-search-j-header',['bind:__l',1,'vueId',1],[],e,s,gg)
+_(eRD,bSD)
+var oTD=_mz(z,'v-advertising',['bind:__l',3,'class',1,'url',2,'vueId',3],[],e,s,gg)
+_(eRD,oTD)
+var xUD=_mz(z,'scroll-view',['class',7,'scrollY',1],[],e,s,gg)
+var oVD=_n('view')
+_rz(z,oVD,'class',9,e,s,gg)
+var fWD=_n('view')
+_rz(z,fWD,'class',10,e,s,gg)
+var cXD=_n('view')
+_rz(z,cXD,'class',11,e,s,gg)
+_(fWD,cXD)
+var hYD=_n('text')
+_rz(z,hYD,'class',12,e,s,gg)
+var oZD=_oz(z,13,e,s,gg)
+_(hYD,oZD)
+_(fWD,hYD)
+_(oVD,fWD)
+var c1D=_n('view')
+_rz(z,c1D,'class',14,e,s,gg)
+var o2D=_v()
+_(c1D,o2D)
+var l3D=function(t5D,a4D,e6D,gg){
+var o8D=_n('view')
+_rz(z,o8D,'class',19,t5D,a4D,gg)
+var x9D=_oz(z,20,t5D,a4D,gg)
+_(o8D,x9D)
+_(e6D,o8D)
+return e6D
+}
+o2D.wxXCkey=2
+_2z(z,17,l3D,e,s,gg,o2D,'item','__i0__','song_id')
+_(oVD,c1D)
+_(xUD,oVD)
+var o0D=_n('view')
+_rz(z,o0D,'class',21,e,s,gg)
+var fAE=_n('view')
+_rz(z,fAE,'class',22,e,s,gg)
+var cBE=_n('view')
+_rz(z,cBE,'class',23,e,s,gg)
+_(fAE,cBE)
+var hCE=_n('text')
+_rz(z,hCE,'class',24,e,s,gg)
+var oDE=_oz(z,25,e,s,gg)
+_(hCE,oDE)
+_(fAE,hCE)
+_(o0D,fAE)
+var cEE=_n('view')
+_rz(z,cEE,'class',26,e,s,gg)
+var oFE=_v()
+_(cEE,oFE)
+var lGE=function(tIE,aHE,eJE,gg){
+var oLE=_n('view')
+_rz(z,oLE,'class',31,tIE,aHE,gg)
+var xME=_oz(z,32,tIE,aHE,gg)
+_(oLE,xME)
+_(eJE,oLE)
+return eJE
+}
+oFE.wxXCkey=2
+_2z(z,29,lGE,e,s,gg,oFE,'item','__i1__','*this')
+_(o0D,cEE)
+_(xUD,o0D)
+_(eRD,xUD)
+_(r,eRD)
+return r
+}
+e_[x[12]]={f:m12,j:[],i:[],ti:[],ic:[]}
 if(path&&e_[path]){
 window.__wxml_comp_version__=0.02
 return function(env,dd,global){$gwxc=0;var root={"tag":"wx-page"};root.children=[]
@@ -1566,7 +1793,7 @@ var setCssToHead = function(file, _xcInvalid, info) {
 var Ca = {};
 var css_id;
 var info = info || {};
-var _C= [[[2,1],],["body{ height:100%; }\n",],];
+var _C= [[[2,1],],["body{ height:100%; }\n@font-face { font-family: \x27iconfont\x27; src: url(\x27https://at.alicdn.com/t/font_1446288_7wmh4c92ql5.ttf\x27) format(\x27truetype\x27); }\n",],];
 function makeup(file, opt) {
 var _n = typeof(file) === "number";
 if ( _n && Ca.hasOwnProperty(file)) return "";
@@ -1635,11 +1862,17 @@ setCssToHead([])();setCssToHead([[2,0]],undefined,{path:"./app.wxss"})();
 __wxAppCode__['app.wxss']=setCssToHead([[2,0]],undefined,{path:"./app.wxss"});    
 __wxAppCode__['app.wxml']=$gwx('./app.wxml');
 
-__wxAppCode__['components/advertising.wxss']=setCssToHead([".",[1],"advertising { width: 100%; height: 23.47vw; }\n.",[1],"advertising wx-image { width: 100%; height: 100%; }\n",],undefined,{path:"./components/advertising.wxss"});    
+__wxAppCode__['components/advertising.wxss']=setCssToHead([".",[1],"advertising { position: fixed; left: 0; top: ",[0,160],"; width: 100%; height: 23.47vw; z-index: 10; }\n.",[1],"advertising wx-image { width: 100%; height: 100%; }\n",],undefined,{path:"./components/advertising.wxss"});    
 __wxAppCode__['components/advertising.wxml']=$gwx('./components/advertising.wxml');
 
 __wxAppCode__['components/banner.wxss']=setCssToHead([".",[1],"banner-wrap .",[1],"swiper { width: 100%; height: 40vw; overflow: hidden; }\n.",[1],"banner-wrap .",[1],"swiper wx-image { width: 100%; height: 100%; }\n",],undefined,{path:"./components/banner.wxss"});    
 __wxAppCode__['components/banner.wxml']=$gwx('./components/banner.wxml');
+
+__wxAppCode__['components/detailNav.wxss']=setCssToHead([".",[1],"detail-nav { position: absolute; width: 100%; top: 0; left: 0; z-index: 99; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; height: ",[0,100],"; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding: 0 ",[0,20]," ",[0,20],"; padding-top: var(--status-bar-height); }\n.",[1],"detail-nav .",[1],"back-btn { font-family: iconfont ; color: #fff; }\n",],undefined,{path:"./components/detailNav.wxss"});    
+__wxAppCode__['components/detailNav.wxml']=$gwx('./components/detailNav.wxml');
+
+__wxAppCode__['components/headNav/headNav.wxss']=setCssToHead(["@font-face { font-family: \x27iconfont\x27; src: url(\x27https://at.alicdn.com/t/font_1446288_f9hajs99ii.ttf\x27) format(\x27truetype\x27); }\n@-webkit-keyframes playing { from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }\nto { -webkit-transform: rotate(360deg); transform: rotate(360deg); }\n}@keyframes playing { from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }\nto { -webkit-transform: rotate(360deg); transform: rotate(360deg); }\n}.",[1],"head-nav { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; height: ",[0,100],"; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding: 0 ",[0,20]," ",[0,20],"; padding-top: var(--status-bar-height); }\n.",[1],"head-nav .",[1],"search-box { -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; height: ",[0,60],"; border: 1px solid #e5e5e5; border-radius: ",[0,4],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding-left: ",[0,10],"; color: #999; }\n.",[1],"head-nav .",[1],"search-box .",[1],"text { font-size: ",[0,32],"; padding-left: ",[0,10],"; }\n.",[1],"head-nav .",[1],"search-box .",[1],"icon { font-family: iconfont; color: #999; }\n.",[1],"head-nav .",[1],"musicIcon { -webkit-box-flex: 0; -webkit-flex: 0 0 ",[0,80],"; -ms-flex: 0 0 ",[0,80],"; flex: 0 0 ",[0,80],"; width: ",[0,80],"; font-family: iconfont; color: #999; font-size: ",[0,50],"; text-align: center; }\n.",[1],"head-nav .",[1],"musicIcon.",[1],"active { -webkit-animation: playing 2s infinite linear; animation: playing 2s infinite linear; }\n",],undefined,{path:"./components/headNav/headNav.wxss"});    
+__wxAppCode__['components/headNav/headNav.wxml']=$gwx('./components/headNav/headNav.wxml');
 
 __wxAppCode__['components/loading.wxss']=setCssToHead([".",[1],"loading-wrap .",[1],"round { position: absolute; margin-left: -5px; margin-top: -5px; width: 10px; height: 10px; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 50%; }\n.",[1],"loading-wrap .",[1],"round1 { top: 50%; left: 52%; background: #ff6c6e; -webkit-animation: mymove 0.5s 0s infinite alternate; animation: mymove 0.5s 0s infinite alternate; }\n.",[1],"loading-wrap .",[1],"round2 { top: 50%; left: 48%; background: #5bc6ab; -webkit-animation: mymove2 0.5s 0s infinite alternate; animation: mymove2 0.5s 0s infinite alternate; }\n.",[1],"loading-wrap .",[1],"round3 { top: 48%; left: 50%; background: #ec7546; -webkit-animation: mymove3 1s 0s infinite alternate; animation: mymove3 1s 0s infinite alternate; }\n.",[1],"loading-wrap .",[1],"round4 { top: 52%; left: 50%; background: #8364a4; -webkit-animation: mymove4 1s 0s infinite alternate; animation: mymove4 1s 0s infinite alternate; }\n@-webkit-keyframes mymove { from { left: 52%; -webkit-transform: rotate(0deg); transform: rotate(0deg); }\nto { left: 48%; -webkit-transform: rotate(360deg); transform: rotate(360deg); border-color: #159de3; }\n}@keyframes mymove { from { left: 52%; -webkit-transform: rotate(0deg); transform: rotate(0deg); }\nto { left: 48%; -webkit-transform: rotate(360deg); transform: rotate(360deg); border-color: #159de3; }\n}@-webkit-keyframes mymove2 { from { left: 48%; -webkit-transform: rotate(0deg); transform: rotate(0deg); }\nto { left: 52%; -webkit-transform: rotate(360deg); transform: rotate(360deg); border-color: blue; }\n}@keyframes mymove2 { from { left: 48%; -webkit-transform: rotate(0deg); transform: rotate(0deg); }\nto { left: 52%; -webkit-transform: rotate(360deg); transform: rotate(360deg); border-color: blue; }\n}@-webkit-keyframes mymove3 { from { top: 48%; -webkit-transform: rotate(0deg); transform: rotate(0deg); }\nto { top: 52%; -webkit-transform: rotate(360deg); transform: rotate(360deg); border-color: green; }\n}@keyframes mymove3 { from { top: 48%; -webkit-transform: rotate(0deg); transform: rotate(0deg); }\nto { top: 52%; -webkit-transform: rotate(360deg); transform: rotate(360deg); border-color: green; }\n}@-webkit-keyframes mymove4 { from { top: 52%; -webkit-transform: rotate(0deg); transform: rotate(0deg); }\nto { top: 48%; -webkit-transform: rotate(360deg); transform: rotate(360deg); border-color: #159dd6; }\n}@keyframes mymove4 { from { top: 52%; -webkit-transform: rotate(0deg); transform: rotate(0deg); }\nto { top: 48%; -webkit-transform: rotate(360deg); transform: rotate(360deg); border-color: #159dd6; }\n}",],undefined,{path:"./components/loading.wxss"});    
 __wxAppCode__['components/loading.wxml']=$gwx('./components/loading.wxml');
@@ -1647,22 +1880,25 @@ __wxAppCode__['components/loading.wxml']=$gwx('./components/loading.wxml');
 __wxAppCode__['components/musicList.wxss']=setCssToHead([".",[1],"music-list { margin-top: ",[0,10],"; padding: 0 ",[0,20],"; background: #fff; margin-bottom: ",[0,20],"; }\n.",[1],"music-list .",[1],"title-warp { width: 100%; height: ",[0,100],"; line-height: ",[0,100],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }\n.",[1],"music-list .",[1],"title-warp .",[1],"icon-wrap { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"music-list .",[1],"title-warp .",[1],"icon-wrap .",[1],"icon { width: ",[0,10],"; background: #D43C33; height: ",[0,60],"; margin-right: ",[0,10],"; }\n.",[1],"music-list .",[1],"title-warp .",[1],"icon-wrap .",[1],"hotImg { width: ",[0,40],"; height: ",[0,40],"; position: relative; top: ",[0,-20],"; right: ",[0,-4],"; }\n.",[1],"music-list .",[1],"title-warp .",[1],"more { font-size: ",[0,30],"; color: #666; }\n.",[1],"music-list .",[1],"item-wrap { overflow: hidden; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }\n.",[1],"music-list .",[1],"item-wrap .",[1],"music-item { -webkit-box-flex: 0; -webkit-flex: 0 0 ",[0,222],"; -ms-flex: 0 0 ",[0,222],"; flex: 0 0 ",[0,222],"; width: ",[0,222],"; margin-bottom: ",[0,10],"; border-radius: ",[0,10],"; overflow: hidden; }\n.",[1],"music-list .",[1],"item-wrap .",[1],"music-item .",[1],"item-title { display: block; width: 100%; color: #666; overflow: hidden; -o-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; font-size: ",[0,30],"; line-height: ",[0,60],"; text-align: center; }\n.",[1],"music-list .",[1],"item-wrap .",[1],"music-item .",[1],"img-wrap { height: ",[0,220],"; }\n.",[1],"music-list .",[1],"item-wrap .",[1],"music-item .",[1],"img-wrap wx-image { width: 100%; height: 100%; }\n.",[1],"music-list .",[1],"item-wrap .",[1],"item-empty { height: 0px; width: ",[0,222],"; }\n",],undefined,{path:"./components/musicList.wxss"});    
 __wxAppCode__['components/musicList.wxml']=$gwx('./components/musicList.wxml');
 
-__wxAppCode__['components/musicPlayer/musicPlayer.wxss']=setCssToHead([".",[1],"music-player { width: 100%; height: 100%; overflow: hidden; position: relative; background: #000; }\n.",[1],"music-player .",[1],"bgImg { height: 100%; width: 100vh; -webkit-filter: blur(20px); filter: blur(20px); }\n.",[1],"music-player .",[1],"mask { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); }\n.",[1],"music-player .",[1],"stickImg { position: absolute; top: ",[0,-170],"; right: ",[0,150],"; width: ",[0,100],"; z-index: 10; -webkit-transform-origin: center top; -ms-transform-origin: center top; transform-origin: center top; -webkit-transform: rotate(-10deg); -ms-transform: rotate(-10deg); transform: rotate(-10deg); -webkit-transition: 0.3s linear; -o-transition: 0.3s linear; transition: 0.3s linear; }\n.",[1],"music-player .",[1],"stickImg.",[1],"playing { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); }\n.",[1],"music-player .",[1],"play-wrap { position: absolute; top: ",[0,100],"; left: 50%; margin-left: ",[0,-300],"; width: ",[0,600],"; height: ",[0,600],"; }\n.",[1],"music-player .",[1],"play-wrap.",[1],"playing { -webkit-animation: playing 12s linear infinite; animation: playing 12s linear infinite; }\n.",[1],"music-player .",[1],"play-wrap .",[1],"playerBg { width: 100%; height: 100%; border-radius: 50%; z-index: 3; }\n.",[1],"music-player .",[1],"play-wrap .",[1],"smImg { position: absolute; left: 50%; top: 50%; width: ",[0,380],"; height: ",[0,380],"; margin-left: ",[0,-190],"; margin-top: ",[0,-190],"; border-radius: 50%; }\n.",[1],"music-player .",[1],"play-wrap .",[1],"play-btn { position: absolute; left: 50%; top: 50%; width: ",[0,150],"; height: ",[0,150],"; margin-left: ",[0,-75],"; margin-top: ",[0,-75],"; border-radius: 50%; background: rgba(0, 0, 0, 0.5); border: 1px solid #fff; }\n.",[1],"music-player .",[1],"play-wrap .",[1],"play-btn .",[1],"play-btn-img { position: absolute; left: 50%; top: 50%; width: ",[0,60],"; height: ",[0,60],"; margin-top: ",[0,-30],"; margin-left: ",[0,-30],"; }\n@-webkit-keyframes playing { from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }\nto { -webkit-transform: rotate(360deg); transform: rotate(360deg); }\n}@keyframes playing { from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }\nto { -webkit-transform: rotate(360deg); transform: rotate(360deg); }\n}.",[1],"music-player .",[1],"lrc-wrap { position: absolute; bottom: 0; height: ",[0,400],"; width: 100%; left: 0; overflow: hidden; -webkit-box-sizing: border-box; box-sizing: border-box; padding-left: ",[0,20],"; }\n.",[1],"music-player .",[1],"lrc-wrap .",[1],"hide-item { height: ",[0,50],"; line-height: ",[0,50],"; visibility: hidden; opacity: 0; }\n.",[1],"music-player .",[1],"lrc-wrap .",[1],"lrc-List { position: absolute; left: 0; width: 100%; -webkit-transition: 0.3s linear; -o-transition: 0.3s linear; transition: 0.3s linear; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"music-player .",[1],"lrc-wrap .",[1],"lrc-List .",[1],"lrc-item { font-size: ",[0,32],"; color: #666; height: ",[0,50],"; line-height: ",[0,50],"; }\n.",[1],"music-player .",[1],"lrc-wrap .",[1],"lrc-List .",[1],"lrc-item.",[1],"active { color: #00bcd4; }\n",],undefined,{path:"./components/musicPlayer/musicPlayer.wxss"});    
+__wxAppCode__['components/musicPlayer/musicPlayer.wxss']=setCssToHead(["@font-face { font-family: \x27iconfont\x27; src: url(\x27https://at.alicdn.com/t/font_1446288_7wmh4c92ql5.ttf\x27) format(\x27truetype\x27); }\n.",[1],"music-player { width: 100%; height: 100%; overflow: hidden; position: relative; background: #000; }\n.",[1],"music-player .",[1],"bgImg { height: 100%; width: 100vh; -webkit-filter: blur(20px); filter: blur(20px); }\n.",[1],"music-player .",[1],"mask { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3); }\n.",[1],"music-player .",[1],"stickImg { position: absolute; top: ",[0,-170],"; right: ",[0,150],"; width: ",[0,100],"; z-index: 10; -webkit-transform-origin: center top; -ms-transform-origin: center top; transform-origin: center top; -webkit-transform: rotate(-10deg); -ms-transform: rotate(-10deg); transform: rotate(-10deg); -webkit-transition: 0.3s linear; -o-transition: 0.3s linear; transition: 0.3s linear; }\n.",[1],"music-player .",[1],"stickImg.",[1],"playing { -webkit-transform: rotate(0deg); -ms-transform: rotate(0deg); transform: rotate(0deg); }\n.",[1],"music-player .",[1],"play-wrap { position: absolute; top: ",[0,100],"; left: 50%; margin-left: ",[0,-300],"; width: ",[0,600],"; height: ",[0,600],"; }\n.",[1],"music-player .",[1],"play-wrap.",[1],"playing { -webkit-animation: playing 12s linear infinite; animation: playing 12s linear infinite; }\n.",[1],"music-player .",[1],"play-wrap .",[1],"playerBg { width: 100%; height: 100%; border-radius: 50%; z-index: 3; }\n.",[1],"music-player .",[1],"play-wrap .",[1],"smImg { position: absolute; left: 50%; top: 50%; width: ",[0,380],"; height: ",[0,380],"; margin-left: ",[0,-190],"; margin-top: ",[0,-190],"; border-radius: 50%; }\n.",[1],"music-player .",[1],"play-wrap .",[1],"play-btn { position: absolute; left: 50%; top: 50%; width: ",[0,150],"; height: ",[0,150],"; margin-left: ",[0,-75],"; margin-top: ",[0,-75],"; border-radius: 50%; background: rgba(0, 0, 0, 0.5); border: 1px solid #fff; }\n.",[1],"music-player .",[1],"play-wrap .",[1],"play-btn .",[1],"play-btn-img { position: absolute; left: 50%; top: 50%; width: ",[0,60],"; height: ",[0,60],"; margin-top: ",[0,-30],"; margin-left: ",[0,-30],"; }\n@-webkit-keyframes playing { from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }\nto { -webkit-transform: rotate(360deg); transform: rotate(360deg); }\n}@keyframes playing { from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }\nto { -webkit-transform: rotate(360deg); transform: rotate(360deg); }\n}.",[1],"music-player .",[1],"lrc-wrap { position: absolute; bottom: 0; height: ",[0,400],"; width: 100%; left: 0; overflow: hidden; -webkit-box-sizing: border-box; box-sizing: border-box; padding-left: ",[0,20],"; }\n.",[1],"music-player .",[1],"lrc-wrap .",[1],"hide-item { height: ",[0,50],"; line-height: ",[0,50],"; visibility: hidden; opacity: 0; }\n.",[1],"music-player .",[1],"lrc-wrap .",[1],"lrc-List { position: absolute; left: 0; width: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }\n.",[1],"music-player .",[1],"lrc-wrap .",[1],"lrc-List .",[1],"lrc-item { font-size: ",[0,32],"; color: #666; height: ",[0,50],"; line-height: ",[0,50],"; }\n.",[1],"music-player .",[1],"lrc-wrap .",[1],"lrc-List .",[1],"lrc-item.",[1],"active { color: #00bcd4; }\n",],undefined,{path:"./components/musicPlayer/musicPlayer.wxss"});    
 __wxAppCode__['components/musicPlayer/musicPlayer.wxml']=$gwx('./components/musicPlayer/musicPlayer.wxml');
 
 __wxAppCode__['components/scrollNav.wxss']=setCssToHead([".",[1],"scroll-nav { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; background: #fff; width: 100%; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 ",[0,10],"; height: ",[0,100],"; }\n.",[1],"scroll-nav .",[1],"scroll-view-item_H { display: inline-block; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; text-align: center; padding: 0 ",[0,20],"; -webkit-box-sizing: border-box; box-sizing: border-box; height: ",[0,80],"; line-height: ",[0,80],"; }\n.",[1],"scroll-nav .",[1],"scroll-view-item_H .",[1],"text-wrap { max-width: 100%; position: relative; }\n.",[1],"scroll-nav .",[1],"scroll-view-item_H .",[1],"text-wrap .",[1],"text { color: #666; font-size: ",[0,36],"; }\n.",[1],"scroll-nav .",[1],"scroll-view-item_H .",[1],"text-wrap .",[1],"text:after { content: \x27\x27; position: absolute; left: 0; bottom: -1px; z-index: 3; width: 100%; height: 4px; -webkit-transform: scaleY(0.5); background: #1296db; visibility: hidden; opacity: 0; }\n.",[1],"scroll-nav .",[1],"scroll-view-item_H.",[1],"active .",[1],"text { color: #1296db; }\n.",[1],"scroll-nav .",[1],"scroll-view-item_H.",[1],"active .",[1],"text:after { visibility: visible; opacity: 1; }\n",],undefined,{path:"./components/scrollNav.wxss"});    
 __wxAppCode__['components/scrollNav.wxml']=$gwx('./components/scrollNav.wxml');
 
-__wxAppCode__['pages/detail/detail.wxss']=setCssToHead(["body{ height:100%; }\n.",[1],"detail-wrap { height: 100%; }\n",],undefined,{path:"./pages/detail/detail.wxss"});    
+__wxAppCode__['components/searchJHeader.wxss']=setCssToHead([".",[1],"search-header { position: fixed; width: 100%; top: 0; left: 0; z-index: 99; height: ",[0,140],"; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding: ",[0,60]," ",[0,20]," ",[0,0],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-sizing: border-box; box-sizing: border-box; }\n.",[1],"search-header .",[1],"search-box { -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; height: ",[0,80],"; line-height: ",[0,80],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; border: 1px solid #e5e5e5; }\n.",[1],"search-header .",[1],"search-box .",[1],"search-input { color: #666; padding-left: ",[0,10],"; line-height: ",[0,80],"; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; height: 100%; font-size: ",[0,32],"; }\n.",[1],"search-header .",[1],"search-box .",[1],"clear-btn { font-family: iconfont; -webkit-box-flex: 0; -webkit-flex: 0 0 ",[0,80],"; -ms-flex: 0 0 ",[0,80],"; flex: 0 0 ",[0,80],"; width: ",[0,80],"; text-align: center; color: #666; }\n.",[1],"search-header .",[1],"search-box .",[1],"ph { color: #666; font-size: ",[0,32],"; line-height: ",[0,80],"; }\n.",[1],"search-header .",[1],"cancel-btn { -webkit-box-flex: 0; -webkit-flex: 0 0 ",[0,140],"; -ms-flex: 0 0 ",[0,140],"; flex: 0 0 ",[0,140],"; width: ",[0,140],"; text-align: center; color: #666; }\n",],undefined,{path:"./components/searchJHeader.wxss"});    
+__wxAppCode__['components/searchJHeader.wxml']=$gwx('./components/searchJHeader.wxml');
+
+__wxAppCode__['pages/detail/detail.wxss']=setCssToHead(["body{ height:100%; }\n@font-face { font-family: \x27iconfont\x27; src: url(\x27https://at.alicdn.com/t/font_1446288_7wmh4c92ql5.ttf\x27) format(\x27truetype\x27); }\n.",[1],"detail-wrap { position: relative; height: 100%; }\n",],undefined,{path:"./pages/detail/detail.wxss"});    
 __wxAppCode__['pages/detail/detail.wxml']=$gwx('./pages/detail/detail.wxml');
 
-__wxAppCode__['pages/index/index.wxss']=setCssToHead(["body{ height:100%; }\n.",[1],"index-wrap { height: 100%; background: #f8f8f8; }\n.",[1],"index-wrap .",[1],"scroll-musicList { position: absolute; top: ",[0,590],"; left: 0; bottom: 0; width: 100%; }\n",],undefined,{path:"./pages/index/index.wxss"});    
+__wxAppCode__['pages/index/index.wxss']=setCssToHead(["body{ height:100%; }\n@font-face { font-family: \x27iconfont\x27; src: url(\x27https://at.alicdn.com/t/font_1446288_7wmh4c92ql5.ttf\x27) format(\x27truetype\x27); }\n.",[1],"index-wrap { height: 100%; background: #f8f8f8; }\n.",[1],"index-wrap .",[1],"scroll-musicList { position: absolute; top: ",[0,560],"; left: 0; bottom: 0; width: 100%; }\n",],undefined,{path:"./pages/index/index.wxss"});    
 __wxAppCode__['pages/index/index.wxml']=$gwx('./pages/index/index.wxml');
 
 __wxAppCode__['pages/me/me.wxss']=undefined;    
 __wxAppCode__['pages/me/me.wxml']=$gwx('./pages/me/me.wxml');
 
-__wxAppCode__['pages/search/search.wxss']=undefined;    
+__wxAppCode__['pages/search/search.wxss']=setCssToHead(["body{ height:100%; }\n@font-face { font-family: \x27iconfont\x27; src: url(\x27https://at.alicdn.com/t/font_1446288_7wmh4c92ql5.ttf\x27) format(\x27truetype\x27); }\n.",[1],"search-wrap .",[1],"search-scroll { position: absolute; top: ",[0,300],"; left: 0; width: 100%; bottom: 0; padding: 0 ",[0,20],"; -webkit-box-sizing: border-box; box-sizing: border-box; }\n.",[1],"search-wrap .",[1],"search-scroll .",[1],"title { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; height: ",[0,100],"; font-size: ",[0,36],"; }\n.",[1],"search-wrap .",[1],"search-scroll .",[1],"title .",[1],"icon { width: ",[0,8],"; background: #d43c33; height: ",[0,40],"; margin-right: ",[0,10],"; }\n.",[1],"search-wrap .",[1],"search-scroll .",[1],"tag-list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }\n.",[1],"search-wrap .",[1],"search-scroll .",[1],"tag-list .",[1],"tag { margin-right: ",[0,20],"; font-size: ",[0,32],"; height: ",[0,60],"; line-height: ",[0,60],"; padding: 0 ",[0,20],"; border: 1px solid #e5e5e5; border-radius: ",[0,10],"; margin-bottom: ",[0,20],"; color: #666; }\n",],undefined,{path:"./pages/search/search.wxss"});    
 __wxAppCode__['pages/search/search.wxml']=$gwx('./pages/search/search.wxml');
 
 ;var __pageFrameEndTime__ = Date.now();

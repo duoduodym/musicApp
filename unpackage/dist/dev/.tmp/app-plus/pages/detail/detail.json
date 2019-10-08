@@ -1,5 +1,8 @@
 {
+  "titleNView": false,
   "usingComponents": {
-    "v-player": "/components/musicPlayer/musicPlayer"
+    "v-player": "/components/musicPlayer/musicPlayer",
+    "v-detail-nav": "/components/detailNav",
+    "v-loading": "/components/loading"
   }
 }

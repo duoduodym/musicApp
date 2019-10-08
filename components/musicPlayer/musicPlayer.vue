@@ -1,5 +1,5 @@
 <template>
-	<view class="music-player" @click="onStop">
+	<view class="music-player" @click="onPause">
 		<image :src="songDetal.songinfo.pic_huge" class="bgImg" ></image>
 		<view class="mask"></view>
 		<image :src="stickImg" class="stickImg" :class="{'playing':isPlaying}"></image>
@@ -11,7 +11,7 @@
 			</view>
 		</view>
 		<view class="lrc-wrap"  id="lrcWrap">
-			<view class="lrc-List"  id="lrcList" :style="{top:lTop}" :animation ="animationData">
+			<view class="lrc-List"  id="lrcList" :style="{top:lrcTop}" :animation ="animationData">
 				<view class="lrc-item" v-for="(val,key) in lrc" :class="{'active':currentTime == key}">{{val}}</view>
 			</view>
 			<view class="hide-item"></view>
@@ -21,6 +21,7 @@
 
 <script>
 	const innerAudioContext = uni.createInnerAudioContext();
+	innerAudioContext.autoplay = true;
 	import {throttle} from 'utils/util'
 	import { mapState } from 'vuex';
 	export default {
@@ -38,15 +39,14 @@
 				lrcListHeight:0,
 				lrcItemHeight:0,
 				lTop:0,
-				currentTime:'',
 				timeArray:[],
 				dist:0,
-				isPlaying:false
+				isPlaying: true
 				
 			};
 		},
 		computed:{
-			...mapState(['playerStatus'])
+			...mapState(['playerStatus','lrcTop','currentTime'])
 		},
 		watch:{
 			lrc:{
@@ -57,20 +57,24 @@
 			},
 			songDetal:{
 				handler(val){
-					if(val) this.checkStatus(val)
+					if(val){
+						if(innerAudioContext.src != val.bitrate.file_link){
+							this.playNew(val)
+						}else{
+							this.checkStatus(val)
+						}	
+					} 
 				},
 				deep:true
-			},
-			
+			}
 		},
 		methods:{
 			onPlay(){
-				innerAudioContext.src = this.songDetal.bitrate.file_link
 				innerAudioContext.play()
 				this.isPlaying = true
 				this.$store.commit('changePlayStatus',true)
 			},
-			onStop(){
+			onPause(){
 				innerAudioContext.pause()
 				this.isPlaying = false
 				this.$store.commit('changePlayStatus',false)
@@ -78,11 +82,12 @@
 			moveLrc(){
 				if(this.isPlaying){
 					this.timeArray.forEach((val,index) => {
-						let  num = parseInt(this.lTop)	
+						let  num = parseInt(this.lrcTop)	
 						if(val == Math.floor(innerAudioContext.currentTime)){
-								this.currentTime = Math.floor(innerAudioContext.currentTime)
+								this.$store.commit('changeCurrentTime',Math.floor(innerAudioContext.currentTime))
 								num = -index * this.lrcItemHeight
-								this.lTop = num + 'px'
+								const top = num + 'px'
+								this.$store.commit('changeLrcTop',top)
 								return
 						}
 					})
@@ -98,23 +103,49 @@
 					this.lrcItemHeight = data.height
 				}).exec();
 			},
+			//播放新歌
+			playNew(val){
+				this.isPlaying = true
+				this.$store.commit('changePlayStatus',true)
+				this.$store.commit('changeLrcTop',0)
+				this.$store.commit('changeCurrentTime',-1)
+				innerAudioContext.src = val.bitrate.file_link
+				innerAudioContext.play()
+			},
 			checkStatus(v){
 				if(!this.playerStatus){
 					this.isPlaying = false
 					return
 				}
-				console.log(v.bitrate.file_link == innerAudioContext.src)
 				if(v.bitrate.file_link == innerAudioContext.src){
-					
 					this.isPlaying = true
 				}
-			
+			},
+			onStatus(){
+				innerAudioContext.onPlay(()=>{
+					this.$store.commit('changePlayStatus',true)
+				})
+				innerAudioContext.onPause(()=>{
+					this.$store.commit('changePlayStatus',false)
+				})
+				innerAudioContext.onStop(()=>{
+					this.$store.commit('changePlayStatus',false)
+				})
+				innerAudioContext.onEnded(()=>{
+					this.$store.commit('changePlayStatus',false)
+					this.isPlaying = false
+					this.$store.commit('changeLrcTop',0)
+					this.$store.commit('changeCurrentTime',-1)
+				})
 			}
 			
 		},
 		created(){
 			this.moveLrc = throttle(this.moveLrc,1000)
-			innerAudioContext.onTimeUpdate(()=>this.moveLrc())
+			innerAudioContext.onTimeUpdate(()=>{
+				this.moveLrc()
+			})
+			this.onStatus()
 		},
 		mounted(){
 			this.getItemHeight()

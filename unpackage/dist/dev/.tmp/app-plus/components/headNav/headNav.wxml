@@ -1,0 +1,1 @@
+<view class="head-nav"><view class="search-box"><view class="icon"></view><text class="text">搜索</text></view><block wx:if="{{currentId}}"><view data-event-opts="{{[['tap',[['goBack',['$event']]]]]}}" class="{{['musicIcon',(playerStatus)?'active':'']}}" bindtap="__e"></view></block></view>

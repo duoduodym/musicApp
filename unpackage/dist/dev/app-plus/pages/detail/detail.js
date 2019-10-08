@@ -1,2 +1,2 @@
-setCssToHead(["body{ height:100%; }\n.",[1],"detail-wrap { height: 100%; }\n",],undefined,{path:"./pages/detail/detail.wxss"})();
+setCssToHead(["body{ height:100%; }\n@font-face { font-family: \x27iconfont\x27; src: url(\x27https://at.alicdn.com/t/font_1446288_7wmh4c92ql5.ttf\x27) format(\x27truetype\x27); }\n.",[1],"detail-wrap { position: relative; height: 100%; }\n",],undefined,{path:"./pages/detail/detail.wxss"})();
 document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/detail/detail.wxml') } }));

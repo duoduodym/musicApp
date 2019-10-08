@@ -13,7 +13,7 @@
 				<view class="img-wrap"><image :src="item.pic_radio"></image></view>
 				<text class="item-title">{{ item.title }}</text>
 			</view>
-			<div class="item-empty"></div>
+			<view class="item-empty"></view>
 		</view>
 	</view>
 </template>
@@ -34,6 +34,7 @@ export default {
 			uni.navigateTo({
 			    url: '/pages/detail/detail?id='+id
 			});
+			this.$store.commit('changeCurrentId',id)
 		}
 	}
 };

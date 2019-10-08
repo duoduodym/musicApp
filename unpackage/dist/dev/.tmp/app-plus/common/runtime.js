@@ -102,11 +102,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/banner":1,"components/musicList":1,"components/advertising":1,"components/loading":1,"components/scrollNav":1,"components/musicPlayer/musicPlayer":1};
+/******/ 		var cssChunks = {"components/banner":1,"components/musicList":1,"components/advertising":1,"components/headNav/headNav":1,"components/loading":1,"components/scrollNav":1,"components/searchJHeader":1,"components/musicPlayer/musicPlayer":1,"components/detailNav":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/banner":"components/banner","components/musicList":"components/musicList","components/advertising":"components/advertising","components/loading":"components/loading","components/scrollNav":"components/scrollNav","components/musicPlayer/musicPlayer":"components/musicPlayer/musicPlayer"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/banner":"components/banner","components/musicList":"components/musicList","components/advertising":"components/advertising","components/headNav/headNav":"components/headNav/headNav","components/loading":"components/loading","components/scrollNav":"components/scrollNav","components/searchJHeader":"components/searchJHeader","components/musicPlayer/musicPlayer":"components/musicPlayer/musicPlayer","components/detailNav":"components/detailNav"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

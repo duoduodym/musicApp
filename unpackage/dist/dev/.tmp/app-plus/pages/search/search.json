@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "titleNView": false,
+  "usingComponents": {
+    "v-search-j-header": "/components/searchJHeader",
+    "v-advertising": "/components/advertising"
+  }
 }
