@@ -1,0 +1,129 @@
+@import '~@/common/style/common.less';
+.music-player{
+		width: 100%;
+		height:100%;
+		overflow: hidden;
+		position: relative;
+		background: #000;
+		.bgImg{
+			height: 100%;
+			width: 100vh;
+			filter: blur(20px);
+		}
+		.mask{
+			position: absolute;
+			left:0;
+			top:0;
+			width: 100%;
+			height:100%;
+			background: rgba(0,0,0,0.3);
+		}
+		.stickImg{
+			position: absolute;
+			top:-170rpx;
+			right:150rpx;
+			width: 100rpx;
+			z-index: 10;
+			transform-origin: center top;
+			transform:rotate(-10deg);
+			transition:0.3s linear;
+			&.playing{
+				transform:rotate(0deg);
+			}
+		}
+		.play-wrap{
+			position: absolute;
+			top:100rpx;
+			left:50%;
+			margin-left: -300rpx;
+			width: 600rpx;
+			height:600rpx;
+			&.playing{
+				animation: playing 12s linear infinite;
+			}
+			.playerBg{
+				width: 100%;
+				height:100%;
+				border-radius: 50%;
+				z-index: 3;
+			}
+			.smImg{
+				position: absolute;
+				left:50%;
+				top:50%;
+				width: 380rpx;
+				height:380rpx;
+				margin-left: -190rpx;
+				margin-top: -190rpx;
+				border-radius: 50%;
+			}
+			
+			.play-btn{
+				position: absolute;
+				left:50%;
+				top:50%;
+				width: 150rpx;
+				height:150rpx;
+				margin-left: -75rpx;
+				margin-top: -75rpx;
+				border-radius: 50%;
+				background: rgba(0,0,0,0.5);
+				border:1px solid #fff;
+				.play-btn-img{
+					position: absolute;
+					left:50%;
+					top:50%;
+					width: 60rpx;
+					height:60rpx;
+					margin-top: -30rpx;
+					margin-left: -30rpx;
+				}
+			}
+			@keyframes playing {
+			  from {
+			    transform: rotate(0deg);
+			  }
+			
+			  to {
+			    transform: rotate(360deg);
+			  }
+			}
+		}
+		.lrc-wrap{
+			position: absolute;
+			bottom:0;
+			height:400rpx;
+			width: 100%;
+			left:0;
+			overflow: hidden;
+			box-sizing: border-box;
+			padding-left: 20rpx;
+			.hide-item{
+				height:50rpx;
+				line-height:50rpx;
+				visibility: hidden;
+				opacity: 0;
+			}
+			.lrc-List{
+				position: absolute;
+				left:0;
+				width: 100%;
+				transition:0.3s linear;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				.lrc-item{
+					font-size: 32rpx;
+					color:#666;
+					height:50rpx;
+					line-height:50rpx;
+					&.active{
+						color:@themeColor;
+					}
+				}
+			}
+			
+		}
+		
+		
+	}

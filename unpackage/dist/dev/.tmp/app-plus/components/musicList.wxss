@@ -1,0 +1,98 @@
+.music-list {
+  margin-top: 10rpx;
+  padding: 0 20rpx;
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+.music-list .title-warp {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.music-list .title-warp .icon-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.music-list .title-warp .icon-wrap .icon {
+  width: 10rpx;
+  background: #D43C33;
+  height: 60rpx;
+  margin-right: 10rpx;
+}
+.music-list .title-warp .icon-wrap .hotImg {
+  width: 40rpx;
+  height: 40rpx;
+  position: relative;
+  top: -20rpx;
+  right: -4rpx;
+}
+.music-list .title-warp .more {
+  font-size: 30rpx;
+  color: #666;
+}
+.music-list .item-wrap {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.music-list .item-wrap .music-item {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 222rpx;
+      -ms-flex: 0 0 222rpx;
+          flex: 0 0 222rpx;
+  width: 222rpx;
+  margin-bottom: 10rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+.music-list .item-wrap .music-item .item-title {
+  display: block;
+  width: 100%;
+  color: #666;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+.music-list .item-wrap .music-item .img-wrap {
+  height: 220rpx;
+}
+.music-list .item-wrap .music-item .img-wrap image {
+  width: 100%;
+  height: 100%;
+}
+.music-list .item-wrap .item-empty {
+  height: 0px;
+  width: 222rpx;
+}
+

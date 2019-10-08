@@ -1,0 +1,2 @@
+setCssToHead(["body{ height:100%; }\n.",[1],"index-wrap { height: 100%; background: #f8f8f8; }\n.",[1],"index-wrap .",[1],"scroll-musicList { position: absolute; top: ",[0,590],"; left: 0; bottom: 0; width: 100%; }\n",],undefined,{path:"./pages/index/index.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/index/index.wxml') } }));

@@ -1,0 +1,2 @@
+setCssToHead(["body{ height:100%; }\n.",[1],"detail-wrap { height: 100%; }\n",],undefined,{path:"./pages/detail/detail.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/detail/detail.wxml') } }));

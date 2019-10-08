@@ -1,0 +1,1 @@
+<view class="detail-wrap"><v-player vue-id="1" lrc="{{lrc}}" songDetal="{{songInfo}}" bind:__l="__l"></v-player></view>

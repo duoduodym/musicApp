@@ -1,0 +1,1 @@
+<block wx:if="{{showLoading}}"><view class="loading-wrap"><view class="round round1"></view><view class="round round2"></view><view class="round round3"></view><view class="round round4"></view></view></block>

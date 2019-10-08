@@ -1,0 +1,9 @@
+.advertising {
+  width: 100%;
+  height: 23.47vw;
+}
+.advertising image {
+  width: 100%;
+  height: 100%;
+}
+

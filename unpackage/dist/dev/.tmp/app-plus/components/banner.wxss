@@ -1,0 +1,10 @@
+.banner-wrap .swiper {
+  width: 100%;
+  height: 40vw;
+  overflow: hidden;
+}
+.banner-wrap .swiper image {
+  width: 100%;
+  height: 100%;
+}
+
