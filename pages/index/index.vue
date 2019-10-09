@@ -10,7 +10,7 @@
 			<view><v-musicList title="摇滚榜" :songList="rockList" id="rockSong" /></view>
 			<view><v-musicList title="欧美金曲" :songList="usaList" id="usaSong" /></view>
 		</scroll-view>
-		<v-loading class="loading" :showLoading="showLoading" />
+		<v-loading :showLoading="showLoading" />
 	</view>
 </template>
 <script>
@@ -18,7 +18,6 @@ import HomeModel from '@/apiModel/home';
 import banner from '@/components/banner';
 import scrollNav from '@/components/scrollNav';
 import musicList from '@/components/musicList';
-import loading from '@/components/loading';
 import advertising from '@/components/advertising';
 import { mapState } from 'vuex';
 import headNav from '@/components/headNav/headNav';
@@ -27,7 +26,6 @@ export default {
 		'v-banner': banner,
 		'v-scrollNav': scrollNav,
 		'v-musicList': musicList,
-		'v-loading': loading,
 		'v-advertising': advertising,
 		'v-headNav':headNav
 	},

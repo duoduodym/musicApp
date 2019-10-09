@@ -1,1 +1,1 @@
-<view class="detail-wrap"><v-detail-nav vue-id="1" bind:__l="__l"></v-detail-nav><v-player vue-id="2" lrc="{{lrc}}" songDetal="{{songInfo}}" bind:__l="__l"></v-player><v-loading class="loading" vue-id="3" showLoading="{{showLoading}}" bind:__l="__l"></v-loading></view>
+<view class="detail-wrap"><v-detail-nav vue-id="1" bind:__l="__l"></v-detail-nav><v-player vue-id="2" lrc="{{lrc}}" songDetal="{{songInfo}}" bind:__l="__l"></v-player><v-loading vue-id="3" bind:__l="__l"></v-loading></view>

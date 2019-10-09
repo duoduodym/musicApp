@@ -18,6 +18,7 @@
           box-sizing: border-box;
 }
 .search-header .search-box {
+  position: relative;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
       -ms-flex: 1;
@@ -30,10 +31,19 @@
   display: flex;
   border: 1px solid #e5e5e5;
   border-radius: 10rpx;
+  -webkit-box-shadow: 0rpx 0rpx 8rpx rgba(0, 0, 0, 0.1);
+          box-shadow: 0rpx 0rpx 8rpx rgba(0, 0, 0, 0.1);
+}
+.search-header .search-box .icon {
+  position: absolute;
+  top: 0;
+  left: 10rpx;
+  font-family: iconfont;
+  color: #999;
 }
 .search-header .search-box .search-input {
   color: #666;
-  padding-left: 10rpx;
+  padding-left: 60rpx;
   line-height: 80rpx;
   -webkit-box-flex: 1;
   -webkit-flex: 1;

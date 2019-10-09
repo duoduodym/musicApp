@@ -110,7 +110,9 @@
 				this.$store.commit('changeLrcTop',0)
 				this.$store.commit('changeCurrentTime',-1)
 				innerAudioContext.src = val.bitrate.file_link
+				console.log(val.bitrate.file_link)
 				innerAudioContext.play()
+				
 			},
 			checkStatus(v){
 				if(!this.playerStatus){

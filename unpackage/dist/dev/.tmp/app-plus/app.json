@@ -45,5 +45,7 @@
   },
   "appname": "musicBox",
   "compilerVersion": "2.3.3",
-  "usingComponents": {}
+  "usingComponents": {
+    "v-loading": "/components/loading"
+  }
 }

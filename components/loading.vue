@@ -9,13 +9,17 @@
 <script>
 import { mapState } from 'vuex';
 export default {
-	props:{
-		showLoading:Boolean
+	// props:{
+	// 	showLoading:Boolean
+	// },
+	computed:{
+		...mapState(['showLoading'])
 	}
 };
 </script>
 <style lang="less">
 .loading-wrap {
+	
 	.round {
 		position: absolute;
 		margin-left: -5px;
@@ -24,18 +28,22 @@ export default {
 		height: 10px;
 		box-sizing: border-box;
 		border-radius: 50%;
+		z-index: 999;
+		
 	}
 	.round1 {
 		top: 50%;
 		left: 52%;
 		background: #ff6c6e;
 		animation: mymove 0.5s 0s infinite alternate;
+
 	}
 	.round2 {
 		top: 50%;
 		left: 48%;
 		background: #5bc6ab;
 		animation: mymove2 0.5s 0s infinite alternate;
+
 	}
 	.round3 {
 		top: 48%;

@@ -4,6 +4,7 @@
 			<input type="text" placeholder="搜索歌名" confirm-type="search" 
 			class="search-input" placeholder-class="ph" 
 			v-model.trim="searchKey" @confirm="onConfirm">
+			<view class="icon">&#xe604;</view>
 			<view class="clear-btn" v-if="searchKey"  @click="onClear">&#xe61d;</view>
 		</view>
 		<view class="cancel-btn" @click="onCancel">取消</view>
@@ -55,15 +56,24 @@
 		display: flex;
 		box-sizing: border-box;
 		.search-box{
+			position: relative;
 			flex:1;
 			height:60rpx;
 			line-height: 60rpx;
 			display: flex;
 			border:1px solid #e5e5e5;
 			border-radius: 10rpx;
+			box-shadow: 0rpx 0rpx 8rpx rgba(0,0,0,0.1);
+			.icon {
+				position: absolute;
+				top:0;
+				left:10rpx;
+				font-family: iconfont;
+				color: #999;
+			}
 			.search-input{
 				color: #666;
-				padding-left: 10rpx;
+				padding-left: 60rpx;
 				line-height: 80rpx;
 				flex:1;
 				height:100%;

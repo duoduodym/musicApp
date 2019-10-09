@@ -13,7 +13,6 @@ const searchModel = {
 			url:`from=android&version=5.6.5.0&method=baidu.ting.search.merge&format=json&query=${key}&page_no=${page}&page_size=10&type=-1&data_source=0&use_cluster=1`
 		})
 	}
-   
 
 }
 export default searchModel

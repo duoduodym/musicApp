@@ -2,7 +2,7 @@
 	<view class="search-wrap">
 		<v-searchJHeader @onSearch="onSearch" @onCancel="onCancel" @onClear="onClear" :sKey="searchKey"/>
 		<v-advertising :url="adUrl" class="ad"/>
-		<scroll-view scroll-y="true" class="search-scroll">
+		<scroll-view scroll-y="true" class="search-scroll" @scrolltolower="onBottom">
 			<view v-if="!isSearching">
 				<view class="search-item-wrap">
 					<view class="title">
@@ -24,7 +24,7 @@
 				</view>
 			</view>
 			<view class="search-list" v-else>
-				<view v-for="item in searchList" :key="item.song_id" class="search-item" @click="onDetail(item.song_id)">
+				<view v-for="(item,index) in searchList" :key="index" class="search-item" @click="onDetail(item.song_id)">
 					<image :src="item.pic_small" class="small-pic"></image>
 					<view class="info">
 						<view class="item-title">{{item.title}}</view>
@@ -33,6 +33,7 @@
 				</view>
 			</view>
 		</scroll-view>
+		<v-loading/>
 	</view>
 </template>
 
@@ -53,25 +54,43 @@ export default {
 			isSearching:false,
 			searchList:[],
 			total:0,
-			searchKey:''
+			searchKey:'',
+			page:1,
+			isLoading:false
 		};
 	},
 	methods: {
+		openLoading() {
+			this.$store.commit('changeLoading', true);
+		},
+		closeLoading() {
+			this.$store.commit('changeLoading', false);
+		},
+		lock(){
+			this.isLoading = true
+		},
+		unLock(){
+			this.isLoading = false
+		},
 		getNew() {
+			this.openLoading()
 			searchModel.getNew().then(res => {
+				this.closeLoading()
 				if(res.song_list){
 					this.hotList = res.song_list
 				}
-			});
+			}).catch(()=>this.closeLoading());
 		},
 		getHistory(){
 			this.historyList = searchModel.getHistory()
 			console.log(this.historyList)
 		},
 		onSearch(key){
+			this.openLoading()
 			this.isSearching = true
 			this.searchKey = key
-			searchModel.searchByKey(key,1).then(res => {
+			searchModel.searchByKey(key,this.page).then(res => {
+				this.closeLoading()
 				if(res.result && res.result.song_info.song_list){
 					this.total = res.result.song_info.total
 					this.searchList = res.result.song_info.song_list
@@ -85,6 +104,23 @@ export default {
 					uni.setStorageSync('historyList',arr)
 					this.historyList = arr
 				}
+			}).catch(()=>this.closeLoading())
+		},
+		loadMore(){
+			if(this.isLoading){
+				return
+			}
+			this.lock()
+			this.openLoading()
+			searchModel.searchByKey(this.searchKey,this.page++).then(res => {
+				this.closeLoading()
+				this.unLock()
+				if(res.result && res.result.song_info.song_list){
+					this.searchList = this.searchList.concat(res.result.song_info.song_list)
+				}
+			}).catch(()=>{
+				this.closeLoading()
+				this.unLock()
 			})
 		},
 		onDetail(id){
@@ -102,6 +138,9 @@ export default {
 			uni.switchTab({
 			    url: '/pages/index/index'
 			});
+		},
+		onBottom(){
+			this.loadMore()
 		}
 	},
 	onLoad() {

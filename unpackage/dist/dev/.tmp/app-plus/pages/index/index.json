@@ -4,7 +4,6 @@
     "v-banner": "/components/banner",
     "v-scroll-nav": "/components/scrollNav",
     "v-music-list": "/components/musicList",
-    "v-loading": "/components/loading",
     "v-advertising": "/components/advertising",
     "v-head-nav": "/components/headNav/headNav"
   }

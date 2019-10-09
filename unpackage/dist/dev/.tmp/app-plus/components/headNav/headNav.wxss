@@ -1,7 +1,3 @@
-@font-face {
-  font-family: 'iconfont';
-  src: url('https://at.alicdn.com/t/font_1446288_f9hajs99ii.ttf') format('truetype');
-}
 @-webkit-keyframes playing {
 from {
     -webkit-transform: rotate(0deg);
@@ -55,6 +51,8 @@ to {
           align-items: center;
   padding-left: 10rpx;
   color: #999;
+  -webkit-box-shadow: 0rpx 0rpx 8rpx rgba(0, 0, 0, 0.1);
+          box-shadow: 0rpx 0rpx 8rpx rgba(0, 0, 0, 0.1);
 }
 .head-nav .search-box .text {
   font-size: 32rpx;
