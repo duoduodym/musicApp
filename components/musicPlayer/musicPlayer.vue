@@ -137,8 +137,7 @@
 					this.$store.commit('changeLrcTop',0)
 					this.$store.commit('changeCurrentTime',-1)
 				})
-			}
-			
+			}	
 		},
 		created(){
 			this.moveLrc = throttle(this.moveLrc,1000)

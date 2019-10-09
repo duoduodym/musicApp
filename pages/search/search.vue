@@ -1,24 +1,35 @@
 <template>
 	<view class="search-wrap">
-		<v-searchJHeader />
+		<v-searchJHeader @onSearch="onSearch" @onCancel="onCancel" @onClear="onClear" :sKey="searchKey"/>
 		<v-advertising :url="adUrl" class="ad"/>
 		<scroll-view scroll-y="true" class="search-scroll">
-			<view class="search-item-wrap">
-				<view class="title">
-					<view class="icon"></view>
-					<text class="text">热门搜索</text>
+			<view v-if="!isSearching">
+				<view class="search-item-wrap">
+					<view class="title">
+						<view class="icon"></view>
+						<text class="text">热门搜索</text>
+					</view>
+					<view class="tag-list">
+						<view class="tag" v-for="item in hotList" :key="item.song_id" @click="onSearch(item.album_title)">{{item.album_title}}</view>
+					</view>
 				</view>
-				<view class="tag-list">
-					<view class="tag" v-for="item in hotList" :key="item.song_id">{{item.album_title}}</view>
+				<view class="search-item-wrap">
+					<view class="title">
+						<view class="icon"></view>
+						<text class="text">历史搜索</text>
+					</view>
+					<view class="tag-list">
+						<view class="tag" v-for="item in historyList" :key="item" @click="onSearch(item)">{{item}}</view>
+					</view>
 				</view>
 			</view>
-			<view class="search-item-wrap">
-				<view class="title">
-					<view class="icon"></view>
-					<text class="text">历史搜索</text>
-				</view>
-				<view class="tag-list">
-					<view class="tag" v-for="item in historyList" :key="item">{{item}}</view>
+			<view class="search-list" v-else>
+				<view v-for="item in searchList" :key="item.song_id" class="search-item" @click="onDetail(item.song_id)">
+					<image :src="item.pic_small" class="small-pic"></image>
+					<view class="info">
+						<view class="item-title">{{item.title}}</view>
+						<view class="item-author">{{item.author}}</view>
+					</view>
 				</view>
 			</view>
 		</scroll-view>
@@ -38,63 +49,68 @@ export default {
 		return {
 			hotList:[],
 			historyList:[],
-			adUrl: require('@/static/advertising.png')
+			adUrl: require('@/static/advertising.png'),
+			isSearching:false,
+			searchList:[],
+			total:0,
+			searchKey:''
 		};
 	},
 	methods: {
 		getNew() {
 			searchModel.getNew().then(res => {
-				console.log(res);
 				if(res.song_list){
 					this.hotList = res.song_list
 				}
+			});
+		},
+		getHistory(){
+			this.historyList = searchModel.getHistory()
+			console.log(this.historyList)
+		},
+		onSearch(key){
+			this.isSearching = true
+			this.searchKey = key
+			searchModel.searchByKey(key,1).then(res => {
+				if(res.result && res.result.song_info.song_list){
+					this.total = res.result.song_info.total
+					this.searchList = res.result.song_info.song_list
+					const arr = uni.getStorageSync('historyList') || [1]
+					if(!arr.includes(key)){
+						arr.unshift(key)
+					}
+					if(arr.length > 10){
+						arr.pop()
+					}
+					uni.setStorageSync('historyList',arr)
+					this.historyList = arr
+				}
+			})
+		},
+		onDetail(id){
+			uni.navigateTo({
+			    url: '/pages/detail/detail?id='+id
+			});
+			this.$store.commit('changeCurrentId',id)
+		},
+		onClear(){
+			this.searchList = []
+			this.isSearching = false
+		},
+		onCancel(){
+			this.onClear()
+			uni.switchTab({
+			    url: '/pages/index/index'
 			});
 		}
 	},
 	onLoad() {
 		this.getNew();
+		this.getHistory()
 	}
 };
 </script>
 
 <style lang="less">
-.search-wrap {
-	.search-scroll {
-		position: absolute;
-		top: 300rpx;
-		left: 0;
-		width: 100%;
-		bottom: 0;
-		padding: 0 20rpx;
-		box-sizing: border-box;
-		.title {
-			display: flex;
-			align-items: center;
-			height:100rpx;
-			font-size: 36rpx;
-			.icon {
-				width: 8rpx;
-				background: #d43c33;
-				height: 40rpx;
-				margin-right: 10rpx;
-			}
-		}
-		.tag-list{
-			display: flex;
-			flex-wrap:wrap;
-			.tag{
-				margin-right: 20rpx;
-				color: #666;
-				font-size: 32rpx;
-				height:60rpx;
-				line-height: 60rpx;
-				padding: 0 20rpx;
-				border:1px solid #e5e5e5;
-				border-radius: 10rpx;
-				margin-bottom: 20rpx;
-				color: #666;
-			}
-		}
-	}
-}
+	@import url('search.less');
 </style>
