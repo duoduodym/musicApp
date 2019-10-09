@@ -1,10 +1,12 @@
 <template>
 	<view class="index-wrap">
 		<v-headNav />
-		<v-banner />
-		<v-scrollNav />
-		<!-- <v-advertising :url="adUrl" /> -->
-		<scroll-view scroll-y="true" class="scroll-musicList" :scroll-into-view="scrollToView" :scroll-with-animation="true">
+		<scroll-view scroll-y="true" class="scroll-musicList" :scroll-with-animation="true" 
+		@scroll="onScroll"
+		>
+			<v-banner class="vb"/>
+			<v-scrollNav class="vs" :class="{'fix':isFix}"/>
+			<view class="hideNav" v-if="isFix"></view>
 			<view><v-musicList title="热歌榜" :songList="hotList" id="hotSong" /></view>
 			<view><v-musicList title="新歌榜" :songList="newList" id="newSong" /></view>
 			<view><v-musicList title="摇滚榜" :songList="rockList" id="rockSong" /></view>
@@ -36,7 +38,9 @@ export default {
 			newList: [],
 			rockList: [],
 			usaList: [],
-			adUrl: require('@/static/advertising.png')
+			adUrl: require('@/static/advertising.png'),
+			isFix:false,
+			bannerH:0
 		};
 	},
 	methods: {
@@ -59,6 +63,20 @@ export default {
 				if (res[2].song_list) this.rockList = res[2].song_list;
 				if (res[3].song_list) this.usaList = res[3].song_list;
 			}).catch(()=>this.closeLoading());
+		},
+		onScroll(ev){
+			let h = ev.detail.scrollTop
+			if(h >= this.bannerH){
+				this.isFix = true
+			}else{
+				this.isFix = false
+			}
+		},
+		getBannerHeight(){
+			const query = uni.createSelectorQuery();
+			query.select('.vb').boundingClientRect(data => {
+				this.bannerH = data.height
+			}).exec();
 		}
 	},
 	computed: {
@@ -66,6 +84,9 @@ export default {
 	},
 	onLoad() {
 		this.getData();
+	},
+	onReady(){
+		this.getBannerHeight()
 	}
 };
 </script>
@@ -76,10 +97,22 @@ export default {
 	background: #f8f8f8;
 	.scroll-musicList {
 		position: absolute;
-		top: 560rpx;
+		top: 140rpx;
 		left: 0;
 		bottom: 0;
 		width: 100%;
+	}
+	.hideNav{
+		height: 100rpx;
+		visibility: hidden;
+		opacity: 0;
+	}
+	.vs.fix{
+		position: fixed;
+		width: 100%;
+		left:0;
+		top:140rpx;
+		z-index: 10;
 	}
 }
 </style>

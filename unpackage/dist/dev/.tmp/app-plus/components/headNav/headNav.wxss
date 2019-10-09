@@ -19,6 +19,10 @@ to {
 }
 }
 .head-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -28,8 +32,8 @@ to {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 20rpx 20rpx;
   padding-top: var(--status-bar-height);
+  z-index: 10;
 }
 .head-nav .search-box {
   -webkit-box-sizing: border-box;

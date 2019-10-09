@@ -29,9 +29,21 @@ page{
 }
 .index-wrap .scroll-musicList {
   position: absolute;
-  top: 560rpx;
+  top: 140rpx;
   left: 0;
   bottom: 0;
   width: 100%;
+}
+.index-wrap .hideNav {
+  height: 100rpx;
+  visibility: hidden;
+  opacity: 0;
+}
+.index-wrap .vs.fix {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 140rpx;
+  z-index: 10;
 }
 
